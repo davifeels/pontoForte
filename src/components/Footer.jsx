@@ -20,9 +20,9 @@ export default function Footer({ onOpenBrandGuide }) {
           {/* Brand Col (5 cols) */}
           <div className="lg:col-span-5 space-y-5">
             <img 
-              src={`${import.meta.env.BASE_URL}brand/logo-horizontal.svg`} 
-              alt="Distribuidora Ponto Forte" 
-              className="h-11 sm:h-12 w-auto object-contain"
+              src={`${import.meta.env.BASE_URL}ponto-forte-logo.png`} 
+              alt="Distribuidora Ponto Forte - Logomarca Oficial" 
+              className="h-12 sm:h-16 w-auto object-contain filter drop-shadow-[0_2px_14px_rgba(245,158,11,0.25)]"
             />
             
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-lg mt-3">

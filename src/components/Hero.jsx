@@ -120,7 +120,7 @@ export default function Hero({ onOpenBrandGuide }) {
                 <div className="flex items-center gap-2.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
                   <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-300">
-                    {showOriginalComparison ? 'Identidade Histórica Original' : 'Proposta de Redesign 2026'}
+                    {showOriginalComparison ? 'Estudo Vetorial Redesign' : 'Logomarca Oficial da Distribuidora'}
                   </span>
                 </div>
 
@@ -128,9 +128,9 @@ export default function Hero({ onOpenBrandGuide }) {
                   type="button"
                   onClick={() => setShowOriginalComparison(!showOriginalComparison)}
                   className="px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-white/10 text-xs font-bold text-amber-300 border border-amber-500/30 transition-all flex items-center gap-1.5 cursor-pointer"
-                  title="Alternar entre a marca original e a modernizada"
+                  title="Alternar entre a marca oficial e o estudo vetorial"
                 >
-                  <span>{showOriginalComparison ? 'Ver Nova Marca' : 'Comparar Original'}</span>
+                  <span>{showOriginalComparison ? 'Ver Logo Oficial' : 'Ver Estudo Vetorial'}</span>
                   <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
                 </button>
               </div>
@@ -140,23 +140,23 @@ export default function Hero({ onOpenBrandGuide }) {
                 {showOriginalComparison ? (
                   <div className="text-center animate-in fade-in duration-300 flex flex-col items-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}original-logo.png`} 
-                      alt="Logo Original Distribuidora Ponto Forte" 
-                      className="max-h-28 sm:max-h-36 w-auto object-contain filter drop-shadow-lg"
+                      src={`${import.meta.env.BASE_URL}brand/logo-principal.svg`} 
+                      alt="Estudo de Redesign Vetorial Distribuidora Ponto Forte" 
+                      className="max-h-32 sm:max-h-44 w-auto object-contain filter drop-shadow-[0_12px_35px_rgba(245,158,11,0.3)] transition-transform duration-300 group-hover:scale-102"
                     />
-                    <p className="text-xs text-slate-400 mt-4 font-mono">
-                      Referência visual histórica: traços energéticos do raio preservados no redesign.
+                    <p className="text-xs text-amber-300/90 mt-4 font-mono font-medium">
+                      Estudo vetorial complementar: geometria com linhas finas e contraste contemporâneo.
                     </p>
                   </div>
                 ) : (
                   <div className="text-center animate-in fade-in duration-300 flex flex-col items-center">
                     <img 
-                      src={`${import.meta.env.BASE_URL}brand/logo-principal.svg`} 
-                      alt="Logo Modernizada Distribuidora Ponto Forte" 
-                      className="max-h-32 sm:max-h-44 w-auto object-contain filter drop-shadow-[0_12px_35px_rgba(245,158,11,0.3)] transition-transform duration-300 group-hover:scale-102"
+                      src={`${import.meta.env.BASE_URL}ponto-forte-logo.png`} 
+                      alt="Logomarca Oficial Distribuidora Ponto Forte" 
+                      className="max-h-36 sm:max-h-48 w-auto object-contain filter drop-shadow-[0_12px_40px_rgba(245,158,11,0.35)] transition-transform duration-300 group-hover:scale-103"
                     />
-                    <p className="text-xs text-amber-300/90 mt-4 font-mono font-medium">
-                      Vetor de precisão: alto contraste, geometria pura e autoridade visual 360°.
+                    <p className="text-xs text-slate-300 mt-4 font-mono font-semibold">
+                      Identidade Oficial: <span className="text-amber-400">Distribuidora Ponto Forte &bull; Bebidas em Geral</span>
                     </p>
                   </div>
                 )}

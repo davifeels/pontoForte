@@ -269,23 +269,23 @@ export default function BrandGuide({ isModal = false, onClose }) {
                 <div className="p-8 rounded-2xl bg-[#06080C] border border-white/10 flex flex-col justify-between">
                   <div>
                     <div className="flex items-center justify-between pb-4 border-b border-white/10">
-                      <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
-                        Identidade Original de Referência
+                      <span className="text-xs font-mono font-bold uppercase tracking-wider text-amber-400">
+                        Identidade Visual Oficial
                       </span>
-                      <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-400 font-semibold">
-                        Versão Histórica
+                      <span className="text-[10px] font-mono px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/30">
+                        Logomarca em Uso
                       </span>
                     </div>
 
                     <div className="min-h-[190px] flex items-center justify-center p-6">
                       <img 
-                        src={`${base}original-logo.png`} 
-                        alt="Logo Original" 
-                        className="max-h-28 w-auto object-contain opacity-90"
+                        src={`${base}ponto-forte-logo.png`} 
+                        alt="Logomarca Oficial Distribuidora Ponto Forte" 
+                        className="max-h-32 w-auto object-contain filter drop-shadow-[0_4px_20px_rgba(245,158,11,0.25)]"
                       />
                     </div>
 
-                    <h4 className="text-base font-bold text-white mt-4">Diagnóstico da Marca Original:</h4>
+                    <h4 className="text-base font-bold text-white mt-4">Análise da Identidade Oficial:</h4>
                     <ul className="text-xs sm:text-sm text-slate-400 mt-3 space-y-2 list-disc list-inside leading-relaxed">
                       <li>Símbolo expressivo (combinação da letra "P" com o raio).</li>
                       <li>Baixo contraste da tipografia branca vazada sobre fundos claros.</li>

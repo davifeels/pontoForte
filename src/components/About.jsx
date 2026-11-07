@@ -63,6 +63,19 @@ export default function About() {
           {/* Left Column: Institutional Narrative & Commitment */}
           <div className="lg:col-span-7 space-y-6">
             <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-[#0F141F] to-[#0A0D15] border border-white/10 shadow-2xl backdrop-blur-xl">
+              
+              {/* Official Brand Header Badge */}
+              <div className="mb-6 pb-6 border-b border-white/10 flex flex-wrap items-center justify-between gap-4">
+                <img 
+                  src={`${import.meta.env.BASE_URL}ponto-forte-logo.png`} 
+                  alt="Distribuidora Ponto Forte - Logomarca Oficial" 
+                  className="h-10 sm:h-13 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(245,158,11,0.25)]"
+                />
+                <span className="text-xs font-mono text-amber-400 font-bold uppercase tracking-wider">
+                  Marca Oficial &bull; Buritis I, Planaltina-DF
+                </span>
+              </div>
+
               <h3 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
                 <CheckCircle2 className="w-6 h-6 text-amber-400 shrink-0" />
                 <span>Modelo de Atendimento Direto e Humanizado</span>
