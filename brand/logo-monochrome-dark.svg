@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
+  <!-- Group: Symbol Monochrome White (For Dark Backgrounds) -->
+  <g transform="translate(15, 12) scale(0.95)">
+    <path d="M 12 36 L 24 36 L 21 42 L 9 42 Z" fill="#FFFFFF" opacity="0.6" />
+    <path d="M 6 48 L 22 48 L 19 54 L 3 54 Z" fill="#FFFFFF" opacity="0.4" />
+    <path d="M 40 18 C 52 18, 98 18, 105 40 C 110 57, 98 70, 78 70 L 48 70 L 54 54 L 74 54 C 85 54, 90 48, 88 38 C 86 28, 74 26, 56 26 L 44 26 Z" fill="#FFFFFF" opacity="0.85" />
+    <path d="M 28 18 L 58 18 L 38 58 L 54 58 L 18 108 L 30 68 L 18 68 L 36 28 L 24 28 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Typography Group -->
+  <g transform="translate(142, 0)">
+    <text x="5" y="38" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="14" 
+          font-weight="700" 
+          letter-spacing="7" 
+          fill="#FFFFFF" 
+          opacity="0.8" 
+          font-style="italic">
+      DISTRIBUIDORA
+    </text>
+
+    <g transform="skewX(-11)">
+      <text x="3" y="90" 
+            font-family="system-ui, -apple-system, sans-serif" 
+            font-size="52" 
+            font-weight="900" 
+            letter-spacing="0.5" 
+            fill="#FFFFFF">
+        PONTO FORTE
+      </text>
+    </g>
+
+    <g transform="translate(0, 114)">
+      <line x1="4" y1="-5" x2="45" y2="-5" stroke="#FFFFFF" stroke-width="2" opacity="0.5" />
+      <text x="56" y="-1" 
+            font-family="system-ui, -apple-system, sans-serif" 
+            font-size="11" 
+            font-weight="700" 
+            letter-spacing="4" 
+            fill="#FFFFFF" 
+            opacity="0.75">
+        LOGÍSTICA &amp; DISTRIBUIÇÃO COMERCIAL
+      </text>
+      <line x1="335" y1="-5" x2="380" y2="-5" stroke="#FFFFFF" stroke-width="2" opacity="0.5" />
+    </g>
+  </g>
+</svg>
