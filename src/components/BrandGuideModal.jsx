@@ -23,7 +23,7 @@ export default function BrandGuideModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-xl overflow-y-auto animate-in fade-in duration-200">
       <div 
-        className="w-full max-w-6xl max-h-[92vh] overflow-y-auto bg-[#0B0F17] border border-slate-800 rounded-3xl shadow-2xl relative my-auto"
+        className="w-[94%] max-w-[1600px] max-h-[92vh] overflow-y-auto bg-[#06080C] border border-amber-500/30 rounded-3xl shadow-2xl relative my-auto p-2 sm:p-6"
         onClick={(e) => e.stopPropagation()}
       >
         <BrandGuide isModal={true} onClose={onClose} />

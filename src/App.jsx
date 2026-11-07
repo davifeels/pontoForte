@@ -15,13 +15,13 @@ export default function App() {
   const [brandModalOpen, setBrandModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0B0F17] text-slate-100 selection:bg-amber-500 selection:text-slate-950">
+    <div className="min-h-screen bg-[#06080C] text-slate-100 selection:bg-amber-400 selection:text-slate-950">
       
       {/* Navigation */}
       <Navbar onOpenBrandGuide={() => setBrandModalOpen(true)} />
 
       {/* Main Content */}
-      <main>
+      <main className="w-full overflow-hidden">
         {/* Hero Section */}
         <Hero onOpenBrandGuide={() => setBrandModalOpen(true)} />
 
@@ -35,7 +35,7 @@ export default function App() {
         <Deliveries />
 
         {/* Embedded Interactive Brand Guidelines Showcase */}
-        <section id="marca" className="bg-[#090D14] border-t border-slate-800/80 px-4 sm:px-6 lg:px-8">
+        <section id="marca" className="bg-[#05070B] border-t border-white/5">
           <BrandGuide isModal={false} />
         </section>
 

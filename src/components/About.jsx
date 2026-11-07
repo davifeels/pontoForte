@@ -6,140 +6,153 @@ export default function About() {
   const pillars = [
     {
       icon: MapPin,
-      title: "Presença Local em Planaltina-DF",
-      description: "Instalada estrategicamente no Setor Residencial Leste, Buritis I, Quadra 5, facilitando a logística interna e o atendimento ao comércio e moradores da região."
+      number: "01",
+      title: "Base Própria em Planaltina-DF",
+      description: "Operando a partir do Setor Residencial Leste, Buritis I, Quadra 5, garantindo ponto estratégico para a logística de abastecimento local e regional."
     },
     {
       icon: Target,
-      title: "Distribuição Comercial Estruturada",
-      description: "Foco no fornecimento para estabelecimentos, conveniências, eventos e demandas pontuais, priorizando organização de pedidos e clareza no contato."
+      number: "02",
+      title: "Distribuição Comercial Organizada",
+      description: "Atendimento estruturado para estabelecimentos, comércio varejista, conveniências e eventos, com foco em pedidos programados e conferência rigorosa."
     },
     {
       icon: ShieldCheck,
-      title: "Conformidade & Rigor Operacional",
-      description: "Atuação em estrita conformidade com a legislação aplicável, transparência fiscal, respeito às normas sanitárias e total atenção ao cliente."
+      number: "03",
+      title: "Rigor & Conformidade Institucional",
+      description: "Atuação transparente, estrito cumprimento das legislações vigentes, respeito aos parceiros comerciais e integridade em todas as etapas operacionais."
     },
     {
       icon: Truck,
-      title: "Logística Sob Confirmação",
-      description: "Processo de separação e entrega planejado, assegurando que cada rota seja confirmada previamente em termos de viabilidade, prazo e endereço."
+      number: "04",
+      title: "Logística Coordenada sob Demanda",
+      description: "Nenhuma rota é despachada sem alinhamento prévio. Cada cliente recebe retorno claro sobre disponibilidade, janela de entrega e viabilidade."
     }
   ];
 
   return (
-    <section id="sobre" className="py-20 sm:py-28 bg-[#0B0F17] relative overflow-hidden border-t border-slate-800/80">
+    <section id="sobre" className="py-24 sm:py-32 bg-[#080B10] relative overflow-hidden border-t border-white/5">
       
       {/* Decorative ambient background */}
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-72 h-72 bg-slate-800/20 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-[500px] h-[500px] bg-slate-800/20 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* 90% Screen Width Container */}
+      <div className="w-[92%] max-w-[1780px] mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            <Building2 className="w-3.5 h-3.5" />
-            <span>Apresentação Institucional</span>
+        <div className="max-w-4xl text-left">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#111827] border border-amber-500/30 text-amber-400 text-xs font-mono font-bold uppercase tracking-wider mb-5">
+            <Building2 className="w-4 h-4 text-amber-400" />
+            <span>Infraestrutura &amp; Apresentação Institucional</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            Sobre a <span className="text-amber-400">Distribuidora Ponto Forte</span>
+          <h2 className="text-3xl sm:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight">
+            Excelência Operacional e Presença Sólida na{' '}
+            <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
+              Distribuição do DF
+            </span>
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed">
-            Uma estrutura comercial orientada à distribuição ágil e ao atendimento próximo em Planaltina-DF. 
-            Conectamos demandas de conveniência, varejo e eventos a um modelo de atendimento prático e transparente.
+          <p className="text-slate-300 text-base sm:text-xl mt-5 leading-relaxed font-normal max-w-4xl">
+            A <strong>Distribuidora Ponto Forte</strong> combina localização estratégica em Planaltina-DF a um processo de atendimento ágil, proporcionando segurança e previsibilidade a comerciantes e clientes.
           </p>
         </div>
 
-        {/* 2-Column Showcase */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mt-12 sm:mt-16">
+        {/* 2-Column Panoramic Showcase */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center mt-14 sm:mt-20">
           
-          {/* Left Column: Authentic Facts & Text */}
+          {/* Left Column: Institutional Narrative & Commitment */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/60 border border-slate-800/80 shadow-xl backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0" />
-                <span>Atuação Comercial Transparente e Responsável</span>
+            <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-[#0F141F] to-[#0A0D15] border border-white/10 shadow-2xl backdrop-blur-xl">
+              <h3 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
+                <CheckCircle2 className="w-6 h-6 text-amber-400 shrink-0" />
+                <span>Modelo de Atendimento Direto e Humanizado</span>
               </h3>
               
-              <div className="text-slate-300 text-sm sm:text-base space-y-4 mt-4 leading-relaxed">
+              <div className="text-slate-300 text-sm sm:text-base space-y-4 mt-5 leading-relaxed">
                 <p>
-                  A <strong>Distribuidora Ponto Forte</strong> atua com base no <strong>Setor Residencial Leste, Buritis I, Quadra 5, Planaltina - DF</strong>, oferecendo um canal direto e desburocratizado para fornecimento e atendimento ao cliente.
+                  Sediada no <strong>Setor Residencial Leste, Buritis I, Quadra 5, Planaltina - DF</strong>, a Distribuidora Ponto Forte se diferencia por eliminar intermediários desnecessários e burocracias, conectando você diretamente à equipe responsável pelo estoque e pela separação.
                 </p>
                 <p>
-                  Em vez de processos engessados, o atendimento é conduzido via canais diretos e telefone, permitindo que cada orçamento, volume de compra ou solicitação de entrega receba atenção individualizada e validação imediata de disponibilidade.
+                  Cada demanda — seja o fornecimento regular para comércios locais ou atendimento a eventos sob encomenda — passa por uma conferência minuciosa de itens antes de qualquer saída de entrega ou liberação no balcão de atendimento.
                 </p>
-                <p className="text-xs text-slate-400 bg-[#0B0F17] p-3.5 rounded-xl border border-slate-800">
-                  <strong className="text-amber-400">Nota de Integridade:</strong> Todas as informações desta apresentação institucional refletem os dados cadastrais conhecidos da empresa. Não são apresentadas alegações ou prazos não confirmados pela operação.
-                </p>
+                <div className="p-4 rounded-2xl bg-[#06080C] border border-amber-500/20 text-xs text-slate-300 space-y-1">
+                  <div className="font-mono font-bold text-amber-400 uppercase tracking-wider flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4" />
+                    <span>Princípio de Integridade Cadastral</span>
+                  </div>
+                  <p className="text-slate-400 leading-relaxed pt-1">
+                    Esta apresentação institucional reflete os dados reais e confirmados da empresa. Não são apresentadas alegações não confirmadas pela operação.
+                  </p>
+                </div>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                  <span className="text-slate-300 font-medium">Atendimento via WhatsApp</span>
+              <div className="pt-6 mt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono text-slate-300">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                  <span>WhatsApp Unificado</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                  <span className="text-slate-300 font-medium">Sede Buritis I — Planaltina</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0"></span>
+                  <span>Base Buritis I, Q 5</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-sky-400"></span>
-                  <span className="text-slate-300 font-medium">Logística com Rota Planejada</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-sky-400 shrink-0"></span>
+                  <span>Rotas Coordenadas</span>
                 </div>
               </div>
             </div>
 
             {/* Quick Action Pill */}
-            <div className="flex items-center justify-between p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm text-slate-200">
-              <span className="font-semibold text-amber-300">
-                Precisa de uma cotação para o seu comércio ou evento?
+            <div className="flex flex-col sm:flex-row items-center justify-between p-5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs sm:text-sm text-slate-200 gap-4">
+              <span className="font-bold text-amber-300 text-center sm:text-left">
+                Deseja uma cotação para o seu comércio ou evento em Planaltina?
               </span>
               <a
                 href={COMPANY_INFO.whatsappUrl("Olá! Gostaria de consultar condições para pedido comercial com a Distribuidora Ponto Forte.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg transition-colors flex items-center gap-1 shrink-0 ml-2"
+                className="px-5 py-2.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black rounded-xl transition-all shadow-md flex items-center gap-2 shrink-0 cursor-pointer"
               >
-                <span>Consultar</span>
-                <ArrowRight className="w-3.5 h-3.5" />
+                <span>Falar com Atendimento</span>
+                <ArrowRight className="w-4 h-4 text-slate-950" />
               </a>
             </div>
           </div>
 
-          {/* Right Column: Visual Logistics Ambiance & Cards */}
-          <div className="lg:col-span-5 space-y-4">
+          {/* Right Column: Architectural Visuals of Premium Logistics Hub */}
+          <div className="lg:col-span-5 space-y-6">
             
-            {/* Professional Commercial Logistics Card */}
-            <div className="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+            {/* Visual Logistics Photo */}
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
               <img 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80" 
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80" 
                 alt="Ambiente de Armazenagem e Distribuição Comercial Organizada" 
-                className="w-full h-64 object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-80 sm:h-96 object-cover filter brightness-[0.85] contrast-[1.1] group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-[#0B0F17]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#06080C] via-[#06080C]/40 to-transparent" />
               
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/90 text-slate-950">
-                  Infraestrutura &amp; Organização
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-500 text-slate-950">
+                  Infraestrutura de Distribuição
                 </span>
-                <h4 className="text-lg font-bold text-white mt-1">
-                  Estoque Organizado &amp; Despacho Rápido
+                <h4 className="text-xl font-bold text-white mt-2">
+                  Estoque Organizado &amp; Despacho Preciso
                 </h4>
-                <p className="text-xs text-slate-300 mt-1">
-                  Separação orientada para conferência rigorosa de itens e pontualidade na entrega.
+                <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Controle contínuo de volumes para garantir conferência rigorosa na saída e entrega pontual aos parceiros.
                 </p>
               </div>
             </div>
 
-            {/* Commercial Dispatch Ambiance */}
-            <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-slate-800 text-amber-400 shrink-0">
-                <Truck className="w-6 h-6" />
+            {/* Second Logistics Bay Ambiance */}
+            <div className="p-6 rounded-2xl bg-gradient-to-r from-[#0F141F] to-[#0A0D15] border border-white/10 flex items-center gap-5">
+              <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 shrink-0">
+                <Truck className="w-7 h-7" />
               </div>
               <div>
-                <h5 className="text-sm font-bold text-white">Logística Regional Coordenada</h5>
-                <p className="text-xs text-slate-400 mt-0.5">
-                  Operações desenhadas para atender Planaltina e áreas limítrofes sob confirmação prévia de escala.
+                <h5 className="text-base font-bold text-white">Logística de Despacho Regional</h5>
+                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+                  Operações desenhadas para atender Planaltina e proximidades com validação prévia de rota pela equipe.
                 </p>
               </div>
             </div>
@@ -148,22 +161,27 @@ export default function About() {
 
         </div>
 
-        {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-          {pillars.map((item, idx) => {
+        {/* 4 Pillars Grid (Spanning Full 90% Width) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-16 sm:mt-24">
+          {pillars.map((item) => {
             const Icon = item.icon;
             return (
               <div 
-                key={idx}
-                className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 hover:bg-slate-900/80 transition-all shadow-lg group"
+                key={item.number}
+                className="p-8 rounded-3xl bg-gradient-to-b from-[#0F141F] to-[#06080C] border border-white/10 hover:border-amber-500/30 hover:bg-[#111827] transition-all duration-300 shadow-xl group"
               >
-                <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6" />
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Icon className="w-7 h-7" />
+                  </div>
+                  <span className="text-sm font-mono font-bold text-amber-500/60">
+                    {item.number}
+                  </span>
                 </div>
-                <h4 className="text-base font-bold text-white group-hover:text-amber-400 transition-colors">
+                <h4 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
                   {item.description}
                 </p>
               </div>
