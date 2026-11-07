@@ -63,7 +63,7 @@ export default function Hero({ onOpenBrandGuide }) {
               {showOriginalComparison ? (
                 <div className="text-center animate-in fade-in duration-300 flex flex-col items-center">
                   <img 
-                    src="./original-logo.png" 
+                    src={`${import.meta.env.BASE_URL}original-logo.png`} 
                     alt="Logo Original Distribuidora Ponto Forte" 
                     className="max-h-24 sm:max-h-28 w-auto object-contain drop-shadow-md"
                   />
@@ -74,7 +74,7 @@ export default function Hero({ onOpenBrandGuide }) {
               ) : (
                 <div className="text-center animate-in fade-in duration-300 flex flex-col items-center">
                   <img 
-                    src="./brand/logo-principal.svg" 
+                    src={`${import.meta.env.BASE_URL}brand/logo-principal.svg`} 
                     alt="Logo Modernizada Distribuidora Ponto Forte" 
                     className="max-h-28 sm:max-h-36 w-auto object-contain filter drop-shadow-[0_10px_25px_rgba(245,158,11,0.2)]"
                   />

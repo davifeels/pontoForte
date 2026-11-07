@@ -34,7 +34,7 @@ export default function Navbar({ onOpenBrandGuide }) {
           {/* Logo brand */}
           <a href="#hero" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg p-1">
             <img 
-              src="./brand/logo-horizontal.svg" 
+              src={`${import.meta.env.BASE_URL}brand/logo-horizontal.svg`} 
               alt="Distribuidora Ponto Forte - Logo Modernizada" 
               className="h-9 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-102"
             />

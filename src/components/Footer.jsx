@@ -19,7 +19,7 @@ export default function Footer({ onOpenBrandGuide }) {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <img 
-              src="./brand/logo-horizontal.svg" 
+              src={`${import.meta.env.BASE_URL}brand/logo-horizontal.svg`} 
               alt="Distribuidora Ponto Forte" 
               className="h-10 w-auto object-contain"
             />

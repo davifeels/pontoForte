@@ -12,12 +12,14 @@ export default function BrandGuide({ isModal = false, onClose }) {
     setTimeout(() => setCopiedHex(null), 2200);
   };
 
+  const base = import.meta.env.BASE_URL;
+
   const logoVersions = [
     {
       id: 'principal',
       name: 'Logo Principal',
       role: 'Versão primária para cabeçalhos nobres, apresentações, fachadas e materiais corporativos.',
-      file: './brand/logo-principal.svg',
+      file: `${base}brand/logo-principal.svg`,
       bgType: 'dark',
       aspect: 'wide'
     },
@@ -25,7 +27,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
       id: 'horizontal',
       name: 'Versão Horizontal',
       role: 'Otimizada para barras de navegação (navbar), fitas laterais de veículos e faturas.',
-      file: './brand/logo-horizontal.svg',
+      file: `${base}brand/logo-horizontal.svg`,
       bgType: 'dark',
       aspect: 'compact-wide'
     },
@@ -33,7 +35,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
       id: 'compact',
       name: 'Versão Compacta / Badge',
       role: 'Emblema em escudo industrial para uniformes, crachás, avatares sociais e carimbos.',
-      file: './brand/logo-compact.svg',
+      file: `${base}brand/logo-compact.svg`,
       bgType: 'dark',
       aspect: 'badge'
     },
@@ -41,7 +43,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
       id: 'mono-dark',
       name: 'Monocromática Negativa',
       role: 'Versão 100% branca para superfícies escuras, bordados escuros e serigrafia de uma cor.',
-      file: './brand/logo-monochrome-dark.svg',
+      file: `${base}brand/logo-monochrome-dark.svg`,
       bgType: 'dark',
       aspect: 'wide'
     },
@@ -49,7 +51,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
       id: 'mono-light',
       name: 'Monocromática Positiva',
       role: 'Versão em grafite puro para notas fiscais, papel timbrado, carimbos e impressão a laser.',
-      file: './brand/logo-monochrome-light.svg',
+      file: `${base}brand/logo-monochrome-light.svg`,
       bgType: 'light',
       aspect: 'wide'
     },
@@ -57,7 +59,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
       id: 'favicon',
       name: 'Ícone Favicon & App Icon',
       role: 'Símbolo "P-Bolt" estilizado em proporção 1:1 para abas de navegador e telas de celular.',
-      file: './brand/favicon.svg',
+      file: `${base}brand/favicon.svg`,
       bgType: 'dark',
       aspect: 'square'
     }
@@ -276,7 +278,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
 
                     <div className="min-h-[170px] flex items-center justify-center p-4">
                       <img 
-                        src="./original-logo.png" 
+                        src={`${base}original-logo.png`} 
                         alt="Logo Original" 
                         className="max-h-24 w-auto object-contain opacity-90"
                       />
@@ -307,7 +309,7 @@ export default function BrandGuide({ isModal = false, onClose }) {
 
                     <div className="min-h-[170px] flex items-center justify-center p-4">
                       <img 
-                        src="./brand/logo-principal.svg" 
+                        src={`${base}brand/logo-principal.svg`} 
                         alt="Nova Logo 2026" 
                         className="max-h-28 w-auto object-contain filter drop-shadow-[0_4px_20px_rgba(245,158,11,0.25)]"
                       />
