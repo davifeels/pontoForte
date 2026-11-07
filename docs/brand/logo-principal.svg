@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
+  <defs>
+    <linearGradient id="pGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE57F" />
+      <stop offset="35%" stop-color="#FFB300" />
+      <stop offset="70%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="pGoldLoop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <filter id="pSoftGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#F59E0B" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Group: Symbol -->
+  <g transform="translate(15, 12) scale(0.95)" filter="url(#pSoftGlow)">
+    <!-- Speed streaks -->
+    <path d="M 12 36 L 24 36 L 21 42 L 9 42 Z" fill="#F59E0B" opacity="0.85" />
+    <path d="M 6 48 L 22 48 L 19 54 L 3 54 Z" fill="#F59E0B" opacity="0.65" />
+
+    <!-- Loop of P -->
+    <path d="M 40 18 
+             C 52 18, 98 18, 105 40 
+             C 110 57, 98 70, 78 70 
+             L 48 70 
+             L 54 54 
+             L 74 54 
+             C 85 54, 90 48, 88 38 
+             C 86 28, 74 26, 56 26 
+             L 44 26 
+             Z" 
+          fill="url(#pGoldLoop)" />
+
+    <!-- Lightning Bolt Stem -->
+    <path d="M 28 18 
+             L 58 18 
+             L 38 58 
+             L 54 58 
+             L 18 108 
+             L 30 68 
+             L 18 68 
+             L 36 28 
+             L 24 28 
+             Z" 
+          fill="url(#pGoldGrad)" />
+
+    <!-- Bevel highlight -->
+    <path d="M 33 22 L 52 22 L 36 54 L 46 54 L 24 94 L 31 64 L 22 64 L 36 32 L 28 32 Z" 
+          fill="#FFF3B0" opacity="0.85" />
+  </g>
+
+  <!-- Typography Group -->
+  <g transform="translate(142, 0)">
+    <!-- Top Subtitle -->
+    <text x="5" y="38" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+          font-size="14" 
+          font-weight="700" 
+          letter-spacing="7" 
+          fill="#94A3B8" 
+          font-style="italic">
+      DISTRIBUIDORA
+    </text>
+
+    <!-- Main Name: PONTO FORTE -->
+    <g transform="skewX(-11)">
+      <!-- PONTO -->
+      <text x="3" y="90" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+            font-size="52" 
+            font-weight="900" 
+            letter-spacing="0.5" 
+            fill="url(#pGoldGrad)">
+        PONTO
+      </text>
+
+      <!-- FORTE -->
+      <text x="202" y="90" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+            font-size="52" 
+            font-weight="900" 
+            letter-spacing="0.5" 
+            fill="#FFFFFF" 
+            stroke="#CBD5E1" 
+            stroke-width="0.5">
+        FORTE
+      </text>
+    </g>
+
+    <!-- Bottom Line: Tagline and decorative rules -->
+    <g transform="translate(0, 114)">
+      <line x1="4" y1="-5" x2="45" y2="-5" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+      <text x="56" y="-1" 
+            font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+            font-size="11" 
+            font-weight="700" 
+            letter-spacing="4" 
+            fill="#CBD5E1">
+        LOGÍSTICA &amp; DISTRIBUIÇÃO COMERCIAL
+      </text>
+      <line x1="335" y1="-5" x2="380" y2="-5" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

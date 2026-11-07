@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 64" fill="none">
+  <defs>
+    <linearGradient id="pHZGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Scaled Symbol -->
+  <g transform="translate(6, 4) scale(0.48)">
+    <path d="M 12 36 L 24 36 L 21 42 L 9 42 Z" fill="#F59E0B" opacity="0.85" />
+    <path d="M 6 48 L 22 48 L 19 54 L 3 54 Z" fill="#F59E0B" opacity="0.65" />
+    <path d="M 40 18 C 52 18, 98 18, 105 40 C 110 57, 98 70, 78 70 L 48 70 L 54 54 L 74 54 C 85 54, 90 48, 88 38 C 86 28, 74 26, 56 26 L 44 26 Z" fill="url(#pHZGold)" />
+    <path d="M 28 18 L 58 18 L 38 58 L 54 58 L 18 108 L 30 68 L 18 68 L 36 28 L 24 28 Z" fill="url(#pHZGold)" />
+    <path d="M 33 22 L 52 22 L 36 54 L 46 54 L 24 94 L 31 64 L 22 64 L 36 32 L 28 32 Z" fill="#FFF3B0" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(70, 0)">
+    <text x="2" y="20" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-size="10" 
+          font-weight="800" 
+          letter-spacing="4" 
+          fill="#94A3B8" 
+          font-style="italic">
+      DISTRIBUIDORA
+    </text>
+
+    <g transform="skewX(-11)">
+      <text x="0" y="50" 
+            font-family="system-ui, -apple-system, sans-serif" 
+            font-size="32" 
+            font-weight="900" 
+            letter-spacing="0.5" 
+            fill="url(#pHZGold)">
+        PONTO
+      </text>
+      <text x="122" y="50" 
+            font-family="system-ui, -apple-system, sans-serif" 
+            font-size="32" 
+            font-weight="900" 
+            letter-spacing="0.5" 
+            fill="#FFFFFF">
+        FORTE
+      </text>
+    </g>
+  </g>
+</svg>
