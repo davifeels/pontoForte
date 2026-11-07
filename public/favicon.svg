@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B0F17" />
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEE685" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="favBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#favBg)" stroke="url(#favBorder)" stroke-width="1.5" />
+
+  <!-- Speed tick -->
+  <path d="M 8 20 L 14 20 L 12.5 23 L 6.5 23 Z" fill="#F59E0B" opacity="0.8" />
+  <path d="M 5 26 L 13 26 L 11.5 29 L 3.5 29 Z" fill="#F59E0B" opacity="0.6" />
+
+  <!-- Loop of P -->
+  <path d="M 23 12 
+           C 29 12, 51 12, 54 23 
+           C 57 32, 50 39, 41 39 
+           L 27 39 
+           L 30 31 
+           L 39 31 
+           C 45 31, 48 28, 47 22 
+           C 46 17, 40 16, 31 16 
+           L 25 16 
+           Z" 
+        fill="url(#favGold)" />
+
+  <!-- Lightning Bolt Stem -->
+  <path d="M 17 12 
+           L 32 12 
+           L 22 32 
+           L 30 32 
+           L 11 56 
+           L 18 37 
+           L 12 37 
+           L 21 17 
+           L 15 17 
+           Z" 
+        fill="#FFD233" />
+</svg>
